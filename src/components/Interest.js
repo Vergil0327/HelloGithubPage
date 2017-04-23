@@ -16,6 +16,7 @@ export default class Interest extends Component {
 	}
 
 	componentDidMount() {
+		/* test */
 		// this.switchAnime('showLuv', 2000, true);
 		// this.switchAnime('showLuv', 6000, false);
 		// this.switchAnime('showMusic', 3450, true);
@@ -25,6 +26,7 @@ export default class Interest extends Component {
 		// this.switchAnime('showReading', 4000, true);
 		// this.switchAnime('showReading', 6000, false);
 		this.startAnime(7500);
+		this.animeInterval = setInterval(() => { this.startAnime(7500) } , 11900);
 	}
 
 	switchAnime(stateName, time, shouldStart) {
