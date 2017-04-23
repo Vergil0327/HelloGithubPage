@@ -1,0 +1,23 @@
+.Counter {
+	background: white;
+	border-radius: 100%;
+	
+	color: black;
+	font-size: 120px;
+	line-height: 240px;
+	width: 240px;
+	text-align: center;
+	position: absolute;
+	top: calc(50% - 120px);
+	right: calc(50% - 120px);
+	transition: all 1s;
+
+	opacity: 1;
+
+	/*visibility: hidden;*/
+}
+
+.end {
+	opacity: 0;
+	transform: rotate3d(0, 1, 0, 1440deg)  scale(0) ;
+}

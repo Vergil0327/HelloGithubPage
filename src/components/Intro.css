@@ -1,0 +1,173 @@
+.Hello {
+	color: white;
+	font-size: 4em;
+	width: 240px;
+	height: 240px;
+	position: absolute;
+	transform: rotate(-45deg);
+	top: calc(50% - 240px);
+	left: calc(50% - 240px);
+
+	/*visibility: hidden;*/
+}
+
+.Hello span {
+	width: 50px;
+	height: 210px;
+	text-align: center;
+	position: absolute;
+
+	top: calc(50% - 35px);
+	left: calc(50% - 20px);
+	transform-origin: bottom center;
+	transition: transform 1s;
+	
+}
+
+[class*='Char'] {
+	display: none;
+}
+
+.show {
+	/*visibility: visible;*/
+	display: inline-block;
+	animation: showText 0.5s;
+}
+
+.Char0 {
+	transform: rotate(0deg);
+}
+.Char0.upsideDown {
+	transform: rotate(190deg);
+}
+.Char0.translate {
+	transform: translateY(3000px);
+}
+.Char0.hide {
+	display: none;
+}
+
+.Char1 {
+	transform: rotate(20deg);
+}
+.Char1.upsideDown {
+	transform: rotate(210deg);
+}
+.Char1.translate {
+	transform: translateY(3000px);
+}
+.Char1.hide {
+	display: none;
+}
+
+.Char2 {
+	transform: rotate(40deg);
+}
+.Char2.upsideDown {
+	transform: rotate(230deg);
+}
+.Char2.translate {
+	transform: translateY(3000px);
+}
+.Char2.hide {
+	display: none;
+}
+
+.Char3 {
+	transform: rotate(60deg);
+}
+.Char3.upsideDown {
+	transform: rotate(250deg);
+}
+.Char3.translate {
+	transform: translateY(3000px);
+}
+.Char3.hide {
+	display: none;
+}
+
+.Char4 {
+	transform: rotate(80deg);
+}
+.Char4.upsideDown {
+	transform: rotate(270deg);
+}
+.Char4.translate {
+	transform: translateY(3000px);
+}
+.Char4.hide {
+	display: none;
+}
+
+.Char5 {
+	transform: rotate(190deg);
+}
+.Char5.upsideDown {
+	transform: rotate(5deg);
+}
+.Char5.translate {
+	transform: translateX(3000px);
+}
+.Char5.hide {
+	display: none;
+}
+
+.Char6 {
+	transform: rotate(210deg);
+}
+.Char6.upsideDown {
+	transform: rotate(30deg);
+}
+.Char6.translate {
+	transform: translateX(3000px);
+}
+.Char6.hide {
+	display: none;
+}
+
+.Char7 {
+	transform: rotate(230deg);
+}
+.Char7.upsideDown {
+	transform: rotate(50deg);
+}
+.Char7.translate {
+	transform: translateX(3000px);
+}
+.Char7.hide {
+	display: none;
+}
+
+.Char8 {
+	transform: rotate(250deg);
+}
+.Char8.upsideDown {
+	transform: rotate(70deg);
+}
+.Char8.translate {
+	transform: translateX(3000px);
+}
+.Char8.hide {
+	display: none;
+}
+
+.Char9 {
+	transform: rotate(270deg);
+}
+.Char9.upsideDown {
+	transform: rotate(90deg);
+}
+.Char9.translate {
+	transform: translateX(3000px);
+}
+.Char9.hide {
+	display: none;
+}
+
+@keyframes showText {
+	0% {
+		opacity: 0;
+		transform: scaleX(1);
+	}
+}
+

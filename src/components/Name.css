@@ -1,0 +1,108 @@
+.Name {
+	color: white;
+	font-size: 4em;
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	perspective: 500px;
+	/*display: none;*/
+}
+
+.H {
+	position: absolute;
+	top: 10%;
+	left: calc(50% - 3000px);
+}
+
+.I {
+	position: absolute;
+	top: calc(30% - 400px);
+	left: calc(50% - 250px);
+}
+
+.V {
+	position: absolute;
+	top: 26%;
+	left: 35%;
+	
+	transform: translateZ(500px);
+
+	/* test layout*/
+	/*top: 26%;
+	left: calc(50% - 115px);*/
+}
+
+.H.active {
+	animation: sayHi 1.5s;
+}
+
+.I.active {
+	animation: sayI 1.5s;
+}
+
+.V.active {
+	animation: sayName 1.5s;
+}
+
+@keyframes sayHi {
+	30% {
+		top: 10%;
+		left: calc(50% - 250px);
+	}
+	45% {
+		top: 10%;
+		left: calc(50% - 250px);
+	}
+	100% {
+		left: calc(100% + 2000px);
+	}
+}
+
+@keyframes sayI {
+	30% {
+		top: 30%;
+	}
+	50% {
+		top: 30%;
+		left: calc(50% - 250px);
+	}
+	60% {
+		top: 5%;
+		left: calc(50% - 45px);
+	}
+	90% {
+		top: 5%;
+		left: calc(50% - 45px);
+		transform: translateZ(0);
+	}
+	100% {
+		top: 65%;
+		left: 50%;
+		transform: translateZ(500px);
+	}
+
+}
+
+@keyframes sayName {
+	0% {
+		font-size: 140%;
+	}
+	30% {
+		font-size: 140%;
+		top: 26%;
+		left: calc(50% - 115px);
+		transform: translateZ(0);
+	}
+	85% {
+		font-size: 140%;
+		top: 26%;
+		left: calc(50% - 115px);
+		transform: translateZ(0);
+	}
+	100% {
+		font-size: 140%;
+		transform: rotateY(90deg);
+	}
+
+}
