@@ -5,9 +5,9 @@ export default class Name extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			showH: false,
+			showHi: false,
 			showI: false,
-			showV: false
+			showVergil: false
 		}
 
 		this.show = this.show.bind(this)
@@ -18,14 +18,14 @@ export default class Name extends Component {
 	componentDidMount() {
 
 		this.startAnime(6000);
-		this.animeInterval = setInterval(this.restartAnime, 7900);
+		this.animeInterval = setInterval(this.restartAnime, 11900);
 	}
 
 	show() {
 		this.setState({
-			showH: true,
+			showHi: true,
 			showI: true,
-			showV: true
+			showVergil: true
 		})
 	}
 
@@ -35,17 +35,17 @@ export default class Name extends Component {
 
 	restartAnime() {
 		this.setState({
-			showH: false,
+			showHi: false,
 			showI: false,
-			showV: false
+			showVergil: false
 		})
 		this.startAnime(6000);
 	}
 
 	render(){
-		const classH = this.state.showH ? `H active` : 'H';
+		const classH = this.state.showHi ? `H active` : 'H';
 		const classI = this.state.showI ? `I active` : 'I';
-		const classV = this.state.showV ? `V active` : 'V';
+		const classV = this.state.showVergil ? `V active` : 'V';
 
 		return(
 			<div className='Name'>

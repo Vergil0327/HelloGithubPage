@@ -8,7 +8,7 @@
 	top: calc(50% - 240px);
 	left: calc(50% - 240px);
 
-	/*visibility: hidden;*/
+	visibility: hidden;
 }
 
 .Hello span {
@@ -29,7 +29,7 @@
 }
 
 .show {
-	/*visibility: visible;*/
+	visibility: visible;
 	display: inline-block;
 	animation: showText 0.5s;
 }

@@ -48,7 +48,7 @@ class Intro extends Component {
 		setTimeout(this.translateText, 5200);
 		setTimeout(this.hideText, 5500);
 
-		setTimeout(this.resetAnime, 7900);
+		setTimeout(this.resetAnime, 11900);
 	}
 
 	resetAnime() {

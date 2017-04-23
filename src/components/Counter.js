@@ -28,7 +28,7 @@ export default class Counter extends Component {
 		if (this.state.countNumber === 100) {
 			setTimeout(this.clearCounter, 3000);
 			clearInterval(this.countDownInterval);
-			setTimeout(this.restartCounter, 5900);
+			setTimeout(this.restartCounter, 9900);
 
 		}
 	}
