@@ -7,29 +7,39 @@ export default class Name extends Component {
 		this.state = {
 			showH: false,
 			showI: false,
-			showV: false,
+			showV: false
 		}
-		this.showHi = this.showHi.bind(this);
-		this.showI = this.showI.bind(this);
-		this.showV = this.showV.bind(this);
+
+		this.show = this.show.bind(this)
+		this.startAnime = this.startAnime.bind(this);
+		this.restartAnime = this.restartAnime.bind(this);
 	}
 
 	componentDidMount() {
-		setTimeout(this.showHi, 6000);
-		setTimeout(this.showI, 6000);
-		setTimeout(this.showV, 6000);
+
+		this.startAnime(6000);
+		this.animeInterval = setInterval(this.restartAnime, 8000);
 	}
 
-	showHi() {
-		this.setState({showH: true});
+	show() {
+		this.setState({
+			showH: true,
+			showI: true,
+			showV: true
+		})
 	}
 
-	showI() {
-		this.setState({showI: true});
+	startAnime(time) {
+		setTimeout(this.show, time);
 	}
 
-	showV() {
-		this.setState({showV: true});
+	restartAnime() {
+		this.setState({
+			showH: false,
+			showI: false,
+			showV: false
+		})
+		this.startAnime(6000);
 	}
 
 	render(){

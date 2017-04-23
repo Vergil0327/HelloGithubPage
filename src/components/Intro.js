@@ -18,13 +18,12 @@ class Intro extends Component {
 		this.upsidedownText = this.upsidedownText.bind(this);
 		this.translateText = this.translateText.bind(this);
 		this.hideText = this.hideText.bind(this);
+		this.startAnime = this.startAnime.bind(this);
+		this.rsestAnime = this.rsestAnime.bind(this);
 	}
 
 	componentDidMount() {
-		setTimeout(this.showText, 2400);
-		setTimeout(this.upsidedownText, 3400);
-		setTimeout(this.translateText, 5200);
-		setTimeout(this.hideText, 5500);
+		this.startAnime();
 	}
 
 	showText() {
@@ -41,6 +40,25 @@ class Intro extends Component {
 
 	hideText() {
 		this.setState({isHide: true});
+	}
+
+	startAnime() {
+		setTimeout(this.showText, 2400);
+		setTimeout(this.upsidedownText, 3400);
+		setTimeout(this.translateText, 5200);
+		setTimeout(this.hideText, 5500);
+
+		setTimeout(this.rsestAnime, 7900);
+	}
+
+	rsestAnime() {
+		this.setState({
+			disShow: false,
+			didUpsidedown: false,
+			didTranslate: false,
+			isHide: false
+		});
+		this.startAnime();
 	}
 
 	render() {
