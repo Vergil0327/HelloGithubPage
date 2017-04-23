@@ -19,7 +19,7 @@ class Intro extends Component {
 		this.translateText = this.translateText.bind(this);
 		this.hideText = this.hideText.bind(this);
 		this.startAnime = this.startAnime.bind(this);
-		this.rsestAnime = this.rsestAnime.bind(this);
+		this.resetAnime = this.resetAnime.bind(this);
 	}
 
 	componentDidMount() {
@@ -48,10 +48,10 @@ class Intro extends Component {
 		setTimeout(this.translateText, 5200);
 		setTimeout(this.hideText, 5500);
 
-		setTimeout(this.rsestAnime, 7900);
+		setTimeout(this.resetAnime, 7900);
 	}
 
-	rsestAnime() {
+	resetAnime() {
 		this.setState({
 			disShow: false,
 			didUpsidedown: false,
