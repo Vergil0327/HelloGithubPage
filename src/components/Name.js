@@ -16,7 +16,6 @@ export default class Name extends Component {
 	}
 
 	componentDidMount() {
-
 		this.startAnime(6000);
 		this.animeInterval = setInterval(this.restartAnime, 11900);
 	}
