@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Proptypes from 'prop-types';
-import Counter from './Counter';
-import Name from './Name';
-import Interest from './Interest';
-import HelloWorld from './Hello';
+import Counter from '../../components/Counter/Counter';
+import Name from '../../components/Name/Name';
+import Interest from '../../components/Interest/Interest';
+import HelloWorld from '../../components/Hello/Hello';
 
 class Intro extends Component {
 

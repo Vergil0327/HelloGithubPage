@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Intro from '../components/Intro';
+import Intro from './Intro/Intro';
 
 class App extends Component {
 
